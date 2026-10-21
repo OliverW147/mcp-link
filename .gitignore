@@ -1,0 +1,11 @@
+.gradle/
+build/
+run/
+*.iml
+.idea/
+.mcsrc/
+__pycache__/
+# generated pages that embed the local bearer token
+maps/
+# personal tools and data, not published
+tools/

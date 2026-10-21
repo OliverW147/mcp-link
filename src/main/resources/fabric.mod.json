@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "mcplink",
+  "version": "${version}",
+  "name": "MCP Link",
+  "description": "Client-side MCP server on 127.0.0.1 that lets any MCP client read what this Minecraft client knows (player, blocks, entities, chat, screens, performance), read the game's code and data files, run scripts you allow, and, while you switch control on, play for you.",
+  "authors": ["Oliver"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["mcplink.McpLink"],
+    "modmenu": ["mcplink.ModMenuEntry"]
+  },
+  "mixins": ["mcplink.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": ">=0.163.0",
+    "minecraft": "~26.3"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
